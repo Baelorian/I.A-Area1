@@ -5,11 +5,18 @@
  */
 package br.com.ia.view;
 
+import br.com.ia.model.No;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 /**
  *
- * @author DB0301400
+ * @author Rafael Santos || Arthur Oliveira
  */
 public class MainViewJogo extends javax.swing.JFrame {
+
+    private Queue<No> arvore = new LinkedList<No>();
 
     private boolean vezIA = false;
     private String mat[][] = new String[3][3];
