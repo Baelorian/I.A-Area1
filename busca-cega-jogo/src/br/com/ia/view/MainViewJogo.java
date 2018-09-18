@@ -1,4 +1,4 @@
-/*
+/*Commit TEST
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -10,10 +10,9 @@ package br.com.ia.view;
  * @author DB0301400
  */
 public class MainViewJogo extends javax.swing.JFrame {
-    
+
     private boolean vezIA = false;
     private String mat[][] = new String[3][3];
-
 
     /**
      * Creates new form MainViewJogo
@@ -21,18 +20,17 @@ public class MainViewJogo extends javax.swing.JFrame {
     public MainViewJogo() {
         initComponents();
     }
-    
-    private void jogar(int l, int c, javax.swing.JButton bt){
-        if(vezIA){
-           mat[l][c] = "O";
-        }else{
+
+    private void jogar(int l, int c, javax.swing.JButton bt) {
+        if (vezIA) {
+            mat[l][c] = "O";
+        } else {
             mat[l][c] = "X";
         }
         bt.setText(mat[l][c]);
-        vezIA=!vezIA;
+        vezIA = !vezIA;
     }
-    
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -215,7 +213,7 @@ public class MainViewJogo extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
